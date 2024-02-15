@@ -1,10 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+<head> <!-- Aqui deben ir los extras como los estilos o el javascript  -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+    /* <!-- <style> LA ETIQUETA STYLE NO DEBE DE IR EN EL HTML, debe ir un LINK en su lugar al CSS --> */
+        /* selectores */
+        header{
+            /* background-color: #FCB1C9C9; */
+            /* background-color: rgb(255, 100, 80); */
+            background-color: rgba(255, 125, 200, 0.6);
+            /* #FF(RED)FF(GREEN)FF(BLUE)FF(TRANSPARENCIA)
+                RGB (RED,GREEN,BLUE)
+                RGBA (RED, GREEN, BLUE, TRANSPARENCIA (0 - 1))
+            */
+        } 
+        h1{
+            color: #DDDDDD;
+        }
+        header nav ul li{
+            /* border: 1px solid red; */
+            border-radius: 5px;
+            display: inline-block; 
+            /* por defecto los bordes estan en bloques, 
+            inline-bloque coloca los bloques en una linea, 
+            si supera el margen movera el bloque una linea abajo */
+        }
+        header nav ul li:hover{
+            background-color: gray;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -14,9 +42,11 @@
         <nav>
             <!-- El navegador(NAV) ayuda a los buscadores conocer las opciones que tendra la pagina para su busqueda -->
             <UL>
-                <li>Opcion1</li>
-                <li>Opcion2</li>
-                <li>Opcion3</li>
+                <li>Incio</li>
+                <li>Archivo</li>
+                <li>Guardar</li>
+                <li>Nosotros</li>
+                <li>Salir para Afuera</li>
             </UL>
         </nav>
     </header>
@@ -73,7 +103,7 @@
     <section class="noticias"></section>
     <!-- section#inicio -->
     <section id="inicio"></section>
-    <!-- Descargar las extenciones
+    <!-- Descargar las extenciones para VS Code
         AutoRenameTag
         Live Server
         Material Icon Theme

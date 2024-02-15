@@ -1,0 +1,10 @@
+selectores
+    *Orden --> Todos los selectores deben estar ordenados de manera alfabetica.
+
+    pseudoElementos
+    
+    etiquetas(p, div, article, section)
+    id (identificadores)# <-- unicos
+    clases . <-- punto, se puede reciclar
+    
+    media querys
