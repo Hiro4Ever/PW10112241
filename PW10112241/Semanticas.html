@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> <!-- Aqui deben ir los extras como los estilos o el javascript  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* <!-- <style> LA ETIQUETA STYLE NO DEBE DE IR EN EL HTML, debe ir un LINK en su lugar al CSS --> */
+        /* selectores */
+        header{
+            /* background-color: #FCB1C9C9; */
+            /* background-color: rgb(255, 100, 80); */
+            background-color: rgba(255, 125, 200, 0.6);
+            /* #FF(RED)FF(GREEN)FF(BLUE)FF(TRANSPARENCIA)
+                RGB (RED,GREEN,BLUE)
+                RGBA (RED, GREEN, BLUE, TRANSPARENCIA (0 - 1))
+            */
+        } 
+        h1{
+            color: #DDDDDD;
+        }
+        header nav ul li{
+            /* border: 1px solid red; */
+            border-radius: 5px;
+            display: inline-block; 
+            /* por defecto los bordes estan en bloques, 
+            inline-bloque coloca los bloques en una linea, 
+            si supera el margen movera el bloque una linea abajo */
+        }
+        header nav ul li:hover{
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="Aqui deberia ir un logo">
+        <!-- El h1 corresponde al titulo de la pagina, no se debe usar mas de una vez -->
+        <h1>Este es el Titulo de La Pagina, en este caso, semanticas. Estamos probando LIVE SERVER</h1>
+        <nav>
+            <!-- El navegador(NAV) ayuda a los buscadores conocer las opciones que tendra la pagina para su busqueda -->
+            <UL>
+                <li>Incio</li>
+                <li>Archivo</li>
+                <li>Guardar</li>
+                <li>Nosotros</li>
+                <li>Salir para Afuera</li>
+            </UL>
+        </nav>
+    </header>
+    <main>
+        Aqui deberia ir lo que es importante
+        <!-- El main le permite a los buscadores substraer la informacion mas importante de la pagina. -->
+        <section>
+            <!-- El main funciona como un periodico, la informacion se puede seccionar en diferentes articulos -->
+            <article>informacion</article>
+            <article>Mas informacion</article>
+            <article>
+                Esto es aun mas
+                <article>informacion</article>
+            </article>
+        </section>
+        <!-- es posible tener un articulo fuera de una seccion -->
+        <article>Articulo fuera de seccion</article> 
+        <aside>
+            <!-- el aside es informacion que no es relevante para el buscador -->
+            <!-- el aside tiene funciiones de publicidad cuando se hace referencia a otra empresa sin que destaque para el buscador -->
+            Informacion no relevante para la pagina de buscador
+            Contiene informacion tangencial de la empresa
+        </aside>
+        <footer>
+            Contacto - telefonos - direccion
+            &copy; 2024 <br>
+            Acerca de..
+            Otras paginas..
+        </footer>
+        Productividad <br>
+        <!-- Emmet <----  -->
+        <ul>
+            <li>Elementos</li>
+            <li>Elementos</li>
+            <li>Elementos</li>
+            <li>Elementos</li>
+            <li>Elementos</li>
+        </ul>
+        <ol><!--  ul>li*4  -->
+            <li>Esto es una multiedicion</li> <!-- tecla control o alt mas el click o flecha-->
+            <li>Esto es una multiedicion</li>
+            <li>Esto es una multiedicion</li>
+            <li>Esto es una multiedicion</li>
+        </ol>
+    </main>
+    <!-- main>section>article*2 -->
+    <main>
+        <section>
+            <article></article>
+            <article></article>
+        </section>
+    </main>
+    <!-- section.noticias -->
+    <section class="noticias"></section>
+    <!-- section#inicio -->
+    <section id="inicio"></section>
+    <!-- Descargar las extenciones para VS Code
+        AutoRenameTag
+        Live Server
+        Material Icon Theme
+    -->
+</body>
+</html>

@@ -1,0 +1,7 @@
+body{ <--- Selector
+    atributos: valor;
+    atributos: valor;
+    atributos: valor;
+    atributos: valor;
+    atributos: valor;
+}
