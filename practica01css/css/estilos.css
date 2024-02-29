@@ -23,7 +23,7 @@ header nav{
     width: 99%;
     margin: 0px auto;
     border-radius: 5px;
-    padding: 2px 0px;
+    padding: 1px 0px;
     /* Los margenes externos son llamados borders; Los margenes internos, padding */
     /* Border-radius tiene un estandar defacto de 5px */
 }
