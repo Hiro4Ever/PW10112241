@@ -4,54 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Práctica 01 HTML + CSS</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <header>
         <img src="img/resplandor.png" alt="fondo">
-        <img src="img/logo.png" alt="logo">
+        <img src="img/logo.png" alt="logo" id="logo">
         <nav>
-            <ol>
+            <ul>
                 <li>Inicio</li>
                 <li>Seccion</li>
                 <li>Seccion</li>
                 <li>Seccion</li>
                 <li>Seccion</li>
                 <li>Seccion</li>
-            </ol>
+            </ul>
             <form action="">
                 <input type="text" placeholder="Buscar Aqui">
                 <input type="submit" value="buscar"> <!-- Cuando se trata de tipo submit, el placeholder se cambia por el atributo value-->
             </form>
         </nav>
     </header>
-    <section>
+    <section id="seccion01">
         <article>
             <img src="img/slide2.jpg" alt="Slide">
         </article>
     </section>
-    <section>
+    <section id="seccion02">
         <article>
             <img src="img/separador.jpg" alt="separador">
             <br>
-            Una Seccion
+            <span class = "unaSeccion Nito"> Una Seccion </span>
+            <!-- Una etiqueta puede tener mas de una clase, y estan separadas por espacios -->
             <br> <!-- El comando Lorem, nos coloca un texto generico perfectamente cuadrado-->
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque autem provident unde quo perferendis voluptatibus quaerat! Facere magni inventore asperiores perferendis optio quos tempore nesciunt! Aliquid nesciunt culpa voluptatum aperiam?
+            <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque autem provident unde quo perferendis voluptatibus quaerat! Facere magni inventore asperiores perferendis optio quos tempore nesciunt! Aliquid nesciunt culpa voluptatum aperiam?
+            </span>
             <p></p>
             <input type="submit" value="Ver mas">
         </article>
         <article>
             <img src="img/separador.jpg" alt="separador">
             <br>
-            Otra Seccion
+            <span class="otraSeccion Nito">Otra Seccion</span>
             <br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, nesciunt rerum temporibus, ex velit natus consequatur fugiat saepe officia, qui sit? At maxime quam veritatis a tenetur possimus eveniet animi.
+            <span> 
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, nesciunt rerum temporibus, ex velit natus consequatur fugiat saepe officia, qui sit? At maxime quam veritatis a tenetur possimus eveniet animi.
+            </span>
             <p></p>
             <input type="submit" value="Ver mas">
         </article>
         <article>
             <img src="img/separador.jpg" alt="separador">
             <br>
-            Un video
+            <span class="otraSeccion Nito">Un video</span>
             <br>
             <img src="img/video.jpg" alt="video">
         </article>
