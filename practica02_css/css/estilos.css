@@ -1,0 +1,31 @@
+body{
+    /* fuente 1em */
+    font-size: 16px;
+    max-width: 1078px;
+    min-width: 1078px;
+    margin: 0px auto;
+}
+header input{
+    float: right;
+    margin-right: -230px;
+    margin-top: 15px;
+}
+#pintura{
+    float: right;
+}
+#granthams{
+    margin-left: 25px;
+    margin-top:  25px;
+}
+header nav{
+    margin-left: 20%;
+    /* margin auto, text aline , margin left/right. */
+}
+header nav ul li{
+    color: gray;
+    display: inline-block;
+    font-size: 1.8em;
+    margin-right: 15px;
+    padding: 2px 0px;
+    border-bottom: 1px solid gray;
+}
