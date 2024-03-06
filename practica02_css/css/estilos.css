@@ -10,6 +10,27 @@ header input{
     margin-right: -230px;
     margin-top: 15px;
 }
+header nav{
+    margin-left: 20%;
+    /* margin auto, text aline , margin left/right. */
+}
+header nav ul li{
+    color: gray;
+    display: inline-block;
+    font-size: 1.8em;
+    margin-right: 15px;
+    padding: 2px 0px;
+    border-bottom: 1px solid gray;
+}
+#seccionPiePagina{
+    border-top: 3px solid gainsboro ;
+    background-color: #4678dc;
+    color: white;
+}
+#seccionPiePagina article{
+    display: inline-block;
+    margin-top: 60px;
+}
 #pintura{
     float: right;
     
@@ -23,18 +44,6 @@ header input{
     top: -410px;
     left: -55px;
 }
-header nav{
-    margin-left: 20%;
-    /* margin auto, text aline , margin left/right. */
-}
-header nav ul li{
-    color: gray;
-    display: inline-block;
-    font-size: 1.8em;
-    margin-right: 15px;
-    padding: 2px 0px;
-    border-bottom: 1px solid gray;
-}
 #primerSeccion{
     margin-top: 60px;
     height: 318px;
@@ -43,8 +52,25 @@ header nav ul li{
     display: inline-block;
     vertical-align: top;
 }
+#segundaSeccion article{
+    text-align: right;
+    padding-right: 140px;
+}
+#terceraSeccion article{
+    vertical-align: top;
+    display: inline-block;
+    width: 23%;
+}
+#terceraSeccion img{
+    /* Alineacion vertical del texto que rodea a la imagen */
+    vertical-align: middle;
+}
 #secc01art01 {
     width: 61%;
+}
+#secc01art02 ul li::before{
+    color: #FF0099;
+    content: "o ";
 }
 #secc01art02 {
     margin-left: 50px;
@@ -53,9 +79,22 @@ header nav ul li{
 #secc01art02 ul {
     list-style: none;
 }
-#secc01art02 ul li::before{
-    color: #FF0099;
-    content: "o ";
+#secc03art04{
+    padding-top: 60px;
+}
+#seccionPiePagina article{
+    font-size: 13px;
+    vertical-align: middle;
+    width: 33%;
+}
+#fsecc01art01{
+
+}
+#fsecc01art01{
+    
+}
+#fsecc01art01{
+    
 }
 .colorAzul{
     color: #4267B3;
@@ -66,9 +105,16 @@ header nav ul li{
 .colorVerde{
     color: #8BC500;
 }
-.nito{
-    font-weight: bold;
-}
 .letraGrande{
     font-size: 3.5em;
+}
+.letraMediana{
+    font-size: 2em;
+    
+}
+.letraChica{
+    font-size: 1.2em;
+}
+.nito{
+    font-weight: bold;
 }
