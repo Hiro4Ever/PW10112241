@@ -1,10 +1,4 @@
-html{
-    /* propiedades personalizables */
-    --color-verde: #849C3C;
-    --color-negro: #353535;
-    --color-rojo: #d33040;
-    --color-gris: lightgray;
-}
+
 body{
 
     font-size: 16px;
@@ -12,9 +6,11 @@ body{
     max-width: 1028px;
 }
 header ul li{
-    width: 17%;
     display: inline-block;
-    margin-right: 20px;
+    margin-left: -10px;
+    padding: 8px 14px;
+    text-align: center;
+    width: 17%;
 }
 header ul li:nth-child(2){
     background: var(--color-verde);
@@ -27,4 +23,60 @@ header ul li:nth-child(4){
 }
 header ul li:nth-child(5){
     background: var(--color-gris);
+}
+html{
+    /* propiedades personalizables */
+    --color-verde: #849C3C;
+    --color-negro: #353535;
+    --color-rojo: #d33040;
+    --color-gris: lightgray;
+    --fondo-negro: #2c2c2c;
+    --color-linea: #949494;
+    --color-azul: lightblue;
+    --color-blanco: white;
+}
+section article{
+    display: inline-block;
+    height: 280px;
+    /* margin-left: -8px; */
+    padding: 18px 8px;
+    vertical-align: top;
+    width: 17.9%;
+}
+section article ul{
+    /* Quitar las vinetas de las listas */
+    list-style: none;
+}
+section article:nth-child(2){
+    background: var(--color-verde);
+}
+section article:nth-child(3){
+    background: var(--color-negro);
+}
+section article:nth-child(4){
+    background: var(--color-rojo);
+}
+section article:nth-child(5){
+    background: var(--color-gris);   
+}
+section, footer{
+    background-color: #2c2c2c;
+}
+section img{
+    width: 150px;
+}
+.letra_azul{
+    color: var(--color-azul);
+}
+.letra_blanca{
+    color: var(--color-blanco);
+}
+.letra_gris{
+    color: var(--color-linea);
+}
+.letra_menu_lateral{
+    font-size: 1.1em;
+}
+.letra_menu_tarjeta{
+    font-size:1.7em;
 }
