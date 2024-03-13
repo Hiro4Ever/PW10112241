@@ -5,12 +5,27 @@ body{
     margin: 0px auto;
     max-width: 1028px;
 }
+footer img{
+    width: 300px;
+}
+footer article{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px;
+    vertical-align: top;
+    width: 31.1%;
+}
 header ul li{
     display: inline-block;
     margin-left: -10px;
     padding: 8px 14px;
     text-align: center;
     width: 17%;
+}
+hr{
+    
+    border: dashed;
+    color: var(--color-linea);
 }
 header ul li:nth-child(2){
     background: var(--color-verde);
@@ -38,14 +53,21 @@ html{
 section article{
     display: inline-block;
     height: 280px;
-    /* margin-left: -8px; */
-    padding: 18px 8px;
+    margin-left: -3px;
+    padding: 18px 3px;
     vertical-align: top;
     width: 17.9%;
 }
+.read_more{
+    margin-left: 220px;
+}
+
 section article ul{
     /* Quitar las vinetas de las listas */
     list-style: none;
+}
+section article:nth-child(1){
+    margin-right: 35px;
 }
 section article:nth-child(2){
     background: var(--color-verde);
