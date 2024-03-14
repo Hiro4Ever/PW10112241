@@ -1,0 +1,8 @@
+body{
+    max-width: 1028px;
+    margin: 0px auto;
+    font-size: 16px;
+}
+header section li{ 
+    display: inline-block;
+}
