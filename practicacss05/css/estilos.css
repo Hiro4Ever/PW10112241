@@ -2,7 +2,6 @@ body{
     max-width: 1024px;
     font-size: 16px;
     margin: 0px auto;
-    border: 1px solid red;
     background-color: rgba(36,93,146,255);
 }
 header article{
@@ -11,41 +10,177 @@ header article{
 }
 main{
     width: 99%;
-    background-color: rgba(239,239,239,255);
     margin: 0px auto;
-    border-radius: 5px;
+    background-color: rgba(239,239,239,255);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
-main nav ul{
+#menuSuperior{
     text-align: right;
 }
-main nav ul li{
+#menuSuperior li{
     display: inline-block;
     margin-right: 20px;
     text-align: right;
-    border: 1px solid red;
 }
-main nav ul li img{
+#menuSuperior li img{
     width: 90px;
     height: 40px;
 }
-#primeraSeccion{
-    width: 30%;
+#seccion_cubos {
+    margin-top: 40px;
 }
-#segundaSeccion{
-    width: 70%;
+#seccion_cubos article{
+    margin-top: 5px;
+    margin-right: 6px;
+    border-radius: 5px;
+    height: 140px;
+    width: 170px;
+    display: inline-block;
+    color: white;
+    text-align: center;
+}
+#seccion_cubos article img{
+    height: 75px;
+    width: 100px;
+}
+#seccion_cubos article:nth-child(3){
+    background-color: rgba(24,169,32,255);
+}
+#seccion_cubos article:nth-child(4){
+    border-radius: 5px;
+    background-color: #1b6da9;
+}
+#seccion_cubos article:nth-child(5){
+    border-radius: 5px;
+    background-color: #7f1aa8;
+}
+#seccion_cubos article:nth-child(6){
+    border-radius: 5px;
+    background-color: #a7191b;
+}
+#seccion_panel{
+    margin-top: 10px;
+}
+#seccion_panel img{
+    margin-top: 10px;
+    height: 175px;
+    width: 715px;
+}
+#seccion_usuarios article{
+    display:inline-block;
+    text-align: center;
+    font-size: 24px;
+    margin-right: 10px;
+    height: 205px;
+    width: 168px;
+    margin-bottom: 5px;
+}
+#seccion_usuarios article button{
+    display: flex;
+    align-items: center;
+    background-color: #5dbedd;
+    border-color: #5dbedd;
+    border-radius: 5px;
+    height: 30px;
+    margin: -15px auto;
+}
+#seccion_usuarios article img{
+    height: 115px;
+    width: 125px;
+}
+#seccion_usuarios article button img{
+    height: 20px;
+    width: 20px;
+}
+#seccion_usuarios article:nth-child(3){
+    background-color: #4a6bae;
+}
+#seccion_usuarios article:nth-child(4){
+    background-color: #4a6bae;
+}
+#seccion_usuarios article:nth-child(5){
+    background-color: #4a6bae;
+}
+#seccion_usuarios article:nth-child(6){
+    background-color: #4a6bae;
 }
 .letras_blanco{
     color: white;  
 }
-.panel_links_text{
+.letras_gris{
+    color: grey;
+}
+.nito{
+    font-weight: bold;
+}
+.seccionIzquierda{
+    float: left;
+    margin-left: 20px;
+    width: 25%;
+}
+.seccionIzquierda article nav ul{
+    padding-top: 0px;
+    padding-left: 0px; /*Colocamos un padding-left para usar el espacio usado por el punto de la lista*/
+}
+.seccionDerecha{
+    margin-left: 28%;
+    width: 72%;
+}
+.seccionDerecha section{
+    margin-left: 5px;
+}
+.titulares_SeccionDos{
+    margin-left: 15px;
+    color: gray;
+}
+.panel_links_header{
+    display: flex; /*Centraremos nuestros encabezados con el uso de display y align-item hacia el centro*/
+    align-items: center;
+    list-style: none;
+    background-color: rgba(34,93,148,255);
+    width: 227px;
+    height: 30px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+.panel_links_header img{
+    margin-right: 2px;
+    width: 30px;
+    height: 30px;
+}
+.panel_links_body{
     list-style: none;
     background-color: rgba(30,73,115,255);
     width: 227px;
-    height: 37px;
+    height: 25px;
+    padding: 2px 0px;
     padding-left: 20px;
-    padding-top: 5px;
 }
-.panel_img{
-    background-color: rgba(34,93,148,255);
-    padding-top: 10px;
+.panel_progress ul li:nth-child(2){
+    border-left:  1px solid gainsboro;
+    border-right:  1px solid gainsboro;
+}
+.panel_progress ul li:nth-child(3){
+    border-left:  1px solid gainsboro;
+    border-right:  1px solid gainsboro;
+}
+.panel_progress ul li:nth-child(4){
+    border-left:  1px solid gainsboro;
+    border-right:  1px solid gainsboro;
+}
+.panel_progress ul li:last-child{
+    border-bottom:  1px solid gainsboro;
+    border-left:  1px solid gainsboro;
+    border-right:  1px solid gainsboro;
+}
+.panel_progress_body{
+    list-style: none;
+    width: 236px;
+    padding: 2px 0px;
+    padding-left: 10px;
+}
+.panel_progress_body img{
+    width: 236px;
+    height: 30px;
 }

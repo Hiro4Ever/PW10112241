@@ -68,6 +68,7 @@ section article ul{
 }
 section article:nth-child(1){
     margin-right: 35px;
+    border: 1px solid red;
 }
 section article:nth-child(2){
     background: var(--color-verde);
