@@ -5,55 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
-    <title>Tarea01CSS</title>
+    <title>Tarea04CSS</title>
 </head>
 <body>
     <header>
-        <section>
-            <img src="img/first_bike.png" alt="first_bike">
-            <nav></nav>    
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Bikes</li>
-                <li>News</li>
-                <li>Support</li>
-                <li>Contact</li>
-                <li>Blog</li>
-                <li>Store</li>
-            </ul>
-            <img src="img/buy.png" alt="buy">
-            <ul>
-                <li> <img src="img/logo_rojo.png" alt="buy"> </li>
-                <li> <img src="img/bandera.png" alt="bandera"></li>
-                <li> <img src="img/mundo.png" alt="mundo"></li>
-            </ul>
-        </section>
+            <article>
+                <img id="firstBike" src="img/first_bike.png" alt="first_bike">
+                <img id="iconoGoTo"src="img/go_to_shop.png" alt="gotoShop">
+                <nav id="paisesHeader"> 
+                    <ul>
+                        <li> <img src="img/logo_rojo.png" alt="buy"> </li>
+                        <li> <img src="img/bandera.png" alt="bandera"></li>
+                        <li> <img src="img/mundo.png" alt="mundo"></li>
+                    </ul>
+                </nav>
+            </article>
+            <article>
+                <nav id="barraMenuSuperior">
+                    <ul>
+                        <li class="nito">Home</li>
+                        <li class="nito">About</li>
+                        <li class="nito">Bikes</li>
+                        <li class="nito">News</li>
+                        <li class="nito">Support</li>
+                        <li class="nito">Contact</li>
+                        <li class="nito">Blog</li>
+                        <li class="nito">Store</li>
+                    </ul>
+                </nav>    
+                <img id="imagenBuy"src="img/buy.png" alt="buy">
+            </article>
         <hr>
     </header>
     <section>
-        <article>
-            <Span> FIRST SENSE OF </Span><P></P><span>BALANCE</span>
+        <article class="columnaArticulo" id="articuloIzquierdo">
+            <Span class="letra_grande nito"> FIRST SENSE OF </Span><P></P><span class="letra_grande nito letra_verde">BALANCE</span>
             <hr>
-            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque est similique accusamus dolorem? Fuga error eum nobis incidunt maxime ipsam quisquam, necessitatibus, quasi, fugit minus natus accusamus. Aliquid, nobis unde?</span>
+            <br>
+            <span class="letra_gris">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque est similique accusamus dolorem? Fuga error eum nobis incidunt maxime ipsam quisquam, necessitatibus, quasi, fugit minus natus accusamus. Aliquid, nobis unde?</span>
             <article>
                 <img src="img/video01.png" alt="video1">
                 <img src="img/video02.png" alt="video2">    
             </article>
         </article>
-        <article>
-            <img src="img/bike.jpg" alt="bike">
-            <img src="img/5years.png" alt="5years">
+        <article class="columnaArticulo" id="articuloDerecho">
+            <img id="fotoBike" src="img/bike.jpg" alt="bike">
+            <img id="sello5years" src="img/5years.png" alt="5years">
         </article>  
     </section>
     <footer>
     <section>
         <img src="img/logos_footer.png" alt="logos_footer">
-        <span> &copy; 2014 Miles Year Ltd, Official Distributor of FirstBIKE in Hong Kong</span>
+        <span class="letra_gris"> &copy; 2014 Miles Year Ltd, Official Distributor of FirstBIKE in Hong Kong</span>
     </section>
         <section>
             <article>
-                <span> ABOUT US </span>
+                <span class="nito"> ABOUT US </span>
+                <hr>
                 <ul>
                     <li>About FirstBike</li>
                     <li>About Miles Year Ltd</li>
@@ -62,7 +70,8 @@
                 </ul>
             </article>
             <article>
-                <span>CUSTOMER INFO</span>
+                <span class="nito">CUSTOMER INFO</span>
+                <hr>
                 <ul>
                     <li>Customer Service</li>
                     <li>Return & Exchanges</li>
@@ -71,23 +80,26 @@
                 </ul>
             </article>
             <article>
-                <span> OUR POLICIES </span>
+                <span class="nito"> OUR POLICIES </span>
+                <hr>
                 <ul>
                     <li>Privacy Policy</li>
                     <li>Terms and Conditions</li>
                 </ul>
             </article>
             <article>
-                <span>ACTIVITIES</span>
+                <span class="nito">ACTIVITIES</span>
+                <hr>
                 <ul>
                     <li>Lastest News</li>
                     <li>Racing/ Competition</li>
                 </ul>
             </article>
             <article>
-                <span> NEWSLETTER </span>
+                <span class="nito"> NEWSLETTER </span>
+                <hr>
                 <ul>
-                    Keep in touch with us to find out exclusively special for you
+                    <li>Keep in touch with us to find out exclusively special for you</li>
                 </ul>
             </article>
         </section>

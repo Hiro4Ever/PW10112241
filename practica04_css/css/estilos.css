@@ -1,8 +1,123 @@
 body{
+    border: 1px solid blue;
     max-width: 1028px;
     margin: 0px auto;
     font-size: 16px;
 }
-header section li{ 
+header article{
+    display: flex;
+    justify-content: space-between; /*le otorga espacio entre los elementos del articulo*/
+    margin-top: 25px;
+}
+hr{ /*le damos estilo punteado al hr*/
+    border: 1px dashed gray;
+    margin: 20px 0px;
+}
+footer section{
+    margin: 25px auto;
+    margin-left: 15px;
+}
+footer section:first-child{
+    display: flex;
+    align-items: center;
+}
+footer section span{
+    vertical-align: top;
+}
+footer section article{
+    color: gray;
     display: inline-block;
+    vertical-align: top;
+    margin-right: 15px;
+    width: 18%;
+}
+footer section article hr{
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    margin: 10px auto;
+}
+footer section article ul li{
+    list-style: none;
+    margin-left: -40px;
+}
+footer section img{
+    height: 35px;
+    width: 110px;
+}
+#articuloIzquierdo{
+    width: 52%;
+    margin-left: 15px;
+}
+#articuloIzquierdo hr{
+    margin-right: 35px;
+}
+#articuloIzquierdo article img{
+    margin-top: 30px;
+    width: 250px;
+    height: 150;
+}
+#articuloDerecho{
+    vertical-align: top;
+    width: 45%;
+}
+#barraMenuSuperior ul{
+    margin-left: -25px;
+}
+#barraMenuSuperior ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+#imagenBuy{
+    margin-right: 33%;
+    width: 50px;
+    height: 50px;
+}
+#iconoGoTo{
+    position: relative; /*necesitaba que esta imagen este fuera de su caja para poder encuadrarlo con la imagen de abajo*/
+    margin-left: 35%;
+    width: 120px;
+    height: 50px;
+    top: 25px;
+    left: 25px;
+}
+#firstBike{
+    margin-left: 15px;
+    text-align: left;
+    width: 200px;
+    height: 50px;
+}
+#fotoBike{
+    width: 450px;
+    height: 450px;
+}
+#sello5years{
+    display: flex;
+    margin-top: -70px;
+}
+#paisesHeader{
+    margin-top: -35px;
+    margin-right: 10px;
+    text-align: right;
+}
+#paisesHeader ul li{
+    display: inline-block;
+    vertical-align: top;
+}
+#paisesHeader ul li img{
+    width: 30px;
+    height: 30px;
+}
+.columnaArticulo{
+    display: inline-block;
+}
+.letra_grande{
+    font-size: 64px;
+}
+.letra_gris{
+    color: gray;
+}
+.letra_verde{
+    color: green;
+}
+.nito{
+    font-weight: bold;
 }
