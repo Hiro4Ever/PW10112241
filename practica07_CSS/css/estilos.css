@@ -1,0 +1,129 @@
+body{
+    max-width: 1024px;
+    margin: 0px auto;
+    font-size: 16px;
+}
+header{
+    background-color: var(--color-azulOscuro);
+    border: 1px solid green;
+}
+header article{
+    vertical-align: middle;
+    margin-top: 10px;
+}
+header article nav{
+    float: right;
+    margin-right: 6%;
+    margin-top: -17px;
+}
+header article span{
+    margin-left: 10%;
+    margin-top: 10px;
+}
+header article nav ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+header article nav ul li img{
+    vertical-align: middle;
+}
+html{
+    --color-azulOscuro: #1e2838;
+    --color-azulGris: #999fac;
+    --color-gris: #384152;
+    --color-azulGrisOscuro: #8C92A3;
+    --color-azul:#1d4ed8;
+}
+footer{
+    margin: 25px auto;
+}
+footer article{
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin: 0px 15px;
+}
+footer article img{
+    height: 90px;
+    width: 90px;
+}
+footer article p{
+    text-align: center;
+}
+section:nth-child(2){
+    background-color: var(--color-azulOscuro);
+}
+#botonAzul{
+    border: none;
+    background-color: var(--color-azul);
+    border-radius: 25px;
+    height: 45px;
+    width: 125px;
+}
+#botonAzul img{
+    vertical-align: middle;
+    margin-right: 5px;
+    height: 25px;
+    width: 25px;
+}
+#botonGris{
+    border: none;
+    background-color: var(--color-gris);
+    border-radius: 25px;
+    height: 45px;
+    width: 125px;
+}
+#botonGris img{
+    vertical-align: middle;
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+}
+#cuerpoPagina{
+    margin-top: 225px;
+    text-align: center;
+}
+#fotoEscritorio{
+    position: relative;
+    top: 125px;
+    margin-top: -125px;
+    border: 5px solid white;
+    border-radius: 10px;
+    height: 400px;
+    width: 600px;
+}
+#social{
+    vertical-align: middle;
+}
+#titular{
+    text-align: center;
+    padding-top: 75px; 
+}
+#titular nav{
+    margin-bottom: 60px;
+}
+#titular nav ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+#titular p{
+    width: 50%;
+    margin: 0px auto;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.letra_blanca{
+    color: white;
+}
+.letra_azulGris{
+    color: var(--color-azulGris);
+}
+.letra_azulGrisOscuro{
+    color: var(--color-azulGrisOscuro);
+}
+.letra_titular{
+    font-size: 28px;
+}
+.nito{
+    font-weight: bold;
+}
