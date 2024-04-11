@@ -23,37 +23,58 @@ html{
     --color-blanco: white;
     --color-naranja: #fd5232;
 }
-body section{
+#articulosDeColores{
     margin: 0px auto;
     width: 99%;
 }
-body section article{
+#articulosDeColores{
+    margin: 0px auto;
+    width: 99%;
+}
+#articulosDeColores section div{
+    margin-top: 5px;
+}
+#articulosDeColores section:nth-child(1) div:nth-child(2){
+    margin-right: 25px;
+}
+#articulosDeColores section:nth-child(2) div{
+    margin-left: 25px;
+}
+#articulosDeColores section{
     display: inline-block;
     width: 49%;
-    
 }
-body section article:first-child{
+#articuloCafe{
     margin-right: 10px;
 }
-#articulo1{
+#articuloCafe span{
+    margin-right: 10px;
+}
+#articuloCafe article{
     background-color: var(--color-cafe);
     border: 10px solid var(--color-blanco);
     width: 450px;
     height: 250px;
+    text-align: justify;
 }
-#articulo2{
+#articuloCafe article span:nth-child(1){
+    display: flex;
+    margin-top: 25px;
+}
+#articuloCafe article span:nth-child(3){
+    display: flex;
+    margin-top: 48px;
+}
+#articuloBlanco article{
     background-color: var(--color-beige);
     border: 10px solid var(--color-blanco);
     width: 450px;
     height: 250px;
     margin-left: 25px;
-}
-.articulo_titulo{
-    margin-top: 20px;
+    text-align: center;
 }
 .articulo_subtitulo{
     font-size: 20px;
-    margin: 0px 20px;
 }
 .letra_blanca{
     color: var(--color-blanco);
@@ -99,6 +120,10 @@ body section article:first-child{
 .nito{
     font-weight: bold;
 }
-.texto_articulo{
-    margin-top: -20px;
+.textoAbajo1{
+    display: flex;
+    justify-content: space-between;
+}
+.textoAbajo2{
+    display: inline-block;
 }
