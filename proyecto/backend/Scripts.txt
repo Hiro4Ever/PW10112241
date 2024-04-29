@@ -2,4 +2,4 @@ Acceder a la Bin: cd /Applications/XAMPP/xamppfiles/bin
 Conectarse a al servidor mysql: ./mysql -h localhost -u root -p
 
 create table clientes(id int, nombre varchar(150), direccion varchar(150), telefono varchar(15), rfc varchar(18));
-insert into clientes values(1,'Emmanuel', 'Corrales', 'Mi casa', '111111', 'RFCLIENTES');
+insert into clientes values(2,'Luis', 'Orlando', 'Mi casa', '111111', 'RFCLIENTES','CURPCLIENTES','CODIG');

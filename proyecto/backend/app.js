@@ -22,12 +22,12 @@ conexion.connect(function(error){
     else{
         console.log('Conectando a la base de datos');
     }
-})
+});
 
 // Rutas de acceso
 app.get("/", function(req, res) {
     res.send("Ruta de inicio")
-})
+});
 //Seleccionamos todos los clientes
 app.get('/api/clientes',(req,res) => {
     conexion.query('Select * From Clientes', (error,filas) =>{
@@ -37,6 +37,15 @@ app.get('/api/clientes',(req,res) => {
         else{
             res.send(filas);
         }
+    });
+});
+//Seleccionamos un cliente en especifico
+app.get('/api/clientes/:id', (req,res)=>{
+    conexion.query('Select * from Clientes Where id=?',[req.params.id],(error,fila) => {
+        if(error){
+            throw error;
+        }
+        res.send(fila);
     });
 });
 
