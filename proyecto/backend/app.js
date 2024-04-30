@@ -49,6 +49,38 @@ app.get('/api/clientes/:id', (req,res)=>{
     });
 });
 
+//Eliminamos un cliente en especifico
+app.delete('/api/clientes/:id', (req,res)=>{
+    let id = req.params.id
+    conexion.query('Delete from Clientes Where id=?', [id],(error,fila) => {
+        if(error){
+            throw error;
+        }
+        res.send(fila);
+    });
+});
+//Insertar un cliente nuevo
+app.post('/api/clientes', (req,res) => {
+    let data = {
+        id: req.body.id,
+        nombre: req.body.nombre,
+        apellido: req.body.apellido,
+        direccion: req.body.direccion,
+        telefono: req.body.telefono,
+        rfc: req.body.rfc,
+        curp: req.body.rfc,
+        cp: req.body.cp
+    };
+    let sql = "Insert into clientes SET ?";
+    conexion.query(sql, data, (error,resultado) => {
+        if(error){
+            throw error;
+        } else {
+            res.send(resultado);
+        }
+    })
+});
+
 // Encender el servidor
 let puerto = 3000; 
 app.listen(puerto, function() {
