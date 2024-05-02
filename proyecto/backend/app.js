@@ -68,7 +68,7 @@ app.post('/api/clientes', (req,res) => {
         direccion: req.body.direccion,
         telefono: req.body.telefono,
         rfc: req.body.rfc,
-        curp: req.body.rfc,
+        curp: req.body.curp,
         cp: req.body.cp
     };
     let sql = "Insert into clientes SET ?";
@@ -80,6 +80,26 @@ app.post('/api/clientes', (req,res) => {
         }
     })
 });
+
+app.put('/api/clientes/:id', (req,res) => {
+        let id = req.params.id;
+        let nombre = req.body.nombre;
+        let apellido = req.body.apellido;
+        let direccion = req.body.direccion;
+        let telefono = req.body.telefono;
+        let rfc = req.body.rfc;
+        let curp = req.body.curp;
+        let cp = req.body.cp;
+        let sql = "Update clientes Set nombre =?, apellido =?, direccion =?, telefono =?, rfc =?, curp =?, cp =? Where id=?";
+        conexion.query(sql, [nombre, apellido, direccion, telefono,rfc, curp, cp, id], (error, result) => {
+            if(error){
+                throw error;
+            }
+            else{
+                res.send(result);
+            }
+        })
+    });
 
 // Encender el servidor
 let puerto = 3000; 
