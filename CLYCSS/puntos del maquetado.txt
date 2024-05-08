@@ -1,0 +1,11 @@
+pagina inicio
+> boton descargas
+> boton licencias
+> boton inicioSesion/registroUsu
+> boton acerca de
+	>mision
+	>vision
+	>contacto
+> boton ayuda
+	> hypervinculos preguntas comunes
+	

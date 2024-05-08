@@ -1,0 +1,67 @@
+html{
+    margin: 0 auto;
+    max-width: 1124px;
+    font-size: 16px;
+    border: 1px solid red;
+    --color-baseColor1: rgba(1,214,149,255);
+    --color-baseColor2: rgba(1,149,101,255);
+    --color-baseColor3: rgba(0,236,252,255);
+}
+header article{
+    display: inline-block;
+    vertical-align: middle;
+}
+header article nav ul{
+    list-style: none;
+}
+header article nav ul li{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+    border: 1px solid green;
+    font-size: 32px;
+}
+.boton-izquierda, .boton-derecha {
+    height: 220px;
+    padding: 1px 5px;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.contenedorImgPrincipal{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0px auto;
+}
+.letraBlanca{
+    color: white;
+}
+.letraBold{
+    font-weight: bold;
+}
+#botonesHeader{
+    margin-left: 15%;
+    text-align: right;
+    border: 1px solid red;
+}
+#botonesHeader div button{
+    padding: 10px;
+    background-color: var(--color-baseColor1);
+    border: 3px solid var(--color-baseColor2);
+    border-radius: 25px;
+}
+#imagen{
+    max-width: 80%;
+}
+#logoClycss{
+    height: 75px;
+    width: 125px;
+}
+#seccionInicial article{
+    width: 49%;
+    display: inline-block;
+}
