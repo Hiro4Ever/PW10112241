@@ -1,0 +1,30 @@
+cd /Applications/XAMPP/xamppfiles/bin
+./mysql -h localhost -u root -p 
+
+use pwdata
+describe clietes
+
+insert into clietes values(2,'JUAn','PEREZ','conocida','55555','RFCJUANPEREZ','CURPJUANPEREZ','80000');
+
+
+node --watch app.js 
+
+command + l  link chorme
+
+
+FORMATO JSON
+
+
+post
+raw
+json
+{
+    "id": 3,
+    "nombre": "LUPTA",
+    "apellido": "HERNANDES",
+    "direccion": "conocida",
+    "telefono": "6666666",
+    "rfc": "LPHERNANDES",
+    "curp": "LPHERNANDESZHLS",
+    "cp": "8111"
+}

@@ -8,5 +8,5 @@ import SupportIcon from './icons/IconSupport.vue'
 </script>
 
 <template>
-  
+ 
 </template>
