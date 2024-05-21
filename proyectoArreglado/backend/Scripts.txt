@@ -1,0 +1,19 @@
+direccion de la carpeta: /Users/ccdm09/Downloads/PW10112241/proyecto/backend
+Acceder a la Bin: cd /Applications/XAMPP/xamppfiles/bin 
+Conectarse a al servidor mysql: ./mysql -h localhost -u root -p
+
+
+create table clientes(id int, nombre varchar(150), direccion varchar(150), telefono varchar(15), rfc varchar(18));
+insert into clientes values(2,'Luis', 'Orlando', 'Mi casa', '111111', 'RFCLIENTES','CURPCLIENTES','CODIG');
+
+//EJEMPLO JSON POST
+{
+    id": 2,
+    "nombre": "Luis",
+    "apellido": "Orlando",
+    "direccion": "Aqui esta mi casa",
+    "telefono": "667158xxxx",
+    "rfc": "COOLXXXXX",
+    "curp": "COOLXXXXXXXX",
+    "cp": "80XXX"
+}
